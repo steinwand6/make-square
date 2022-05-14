@@ -2,8 +2,6 @@ package piscine
 
 func Is_valid_param(params []string) bool {
 	for _, str := range params {
-		println(str)
-		println(len(str))
 		if len(str) != 16 || CountIf(str, '#') != 4 || CountIf(str, '.') != 12 {
 			return false
 		}
