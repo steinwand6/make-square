@@ -20,7 +20,7 @@ func is_valid_tetrimino(m string) bool {
 		if r == '.' {
 			continue
 		}
-		if i > 1 && i%4 != 0 && m[i-1] == '#' {
+		if i > 0 && i%4 != 0 && m[i-1] == '#' {
 			found++
 		}
 		if i < 15 && m[i+1] == '#' {
